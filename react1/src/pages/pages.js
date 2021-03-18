@@ -3,8 +3,11 @@ import {Switch, Route} from 'react-router-dom'
 
 import Home from './home'
 import Login from './login'
-import Pegawai from './pegawai'
 import Register from './register'
+import Pegawai from './pegawai'
+import Siswa from './siswa'
+import Pelanggaran from './pelanggaran'
+import Jurusan from './jurusan'
 
 const Pages = () => (
     <Switch>
@@ -12,7 +15,11 @@ const Pages = () => (
         <Route path='/login' component={Login} />
         <Route path='/register' component={Register} />
         <Route path='/pegawai' component={Pegawai} />
+        <Route path='/siswa' component={Siswa} /> 
+        <Route path='/pelanggaran' component={Pelanggaran} />
+        <Route path='/jurusan' component={Jurusan} />   
+       
     </Switch>
 )
 
-export default Pages
+export default Pages;
